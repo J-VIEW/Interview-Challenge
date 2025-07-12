@@ -1,0 +1,25 @@
+# Ensure all text files use LF
+* text=auto eol=lf
+
+# Mark PHP files as text
+*.php text diff=php
+
+# Mark JS and CSS as text
+*.js text
+*.css text
+
+# Treat SQL as text
+*.sql text
+
+# Normalize Markdown
+*.md text
+
+# Linguist overrides (for GitHub language stats)
+*.env linguist-language=INI
+
+# Exclude vendor from language stats
+/vendor/* linguist-vendored
+
+# Exclude minified files from language stats
+*.min.js linguist-vendored
+*.min.css linguist-vendored 

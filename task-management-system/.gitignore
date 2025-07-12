@@ -1,0 +1,48 @@
+# Environment files
+.env
+.env.*
+
+# Composer dependencies
+/vendor/
+composer.phar
+
+# Log files
+/logs/*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Node (if ever used)
+/node_modules/
+
+# PHPStorm
+.idea/
+
+# VSCode
+.vscode/
+
+# Backup files
+*~
+
+# Ignore database dumps/backups
+*.sql
+*.sqlite
+
+# Ignore test output
+/phpunit.xml
+/phpunit.result.cache
+
+# Ignore build artifacts
+/public/js/*.min.js
+/public/css/*.min.css
+
+# Ignore other sensitive or temp files
+*.cache
+*.lock
