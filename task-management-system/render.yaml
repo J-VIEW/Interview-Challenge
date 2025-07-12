@@ -1,0 +1,47 @@
+services:
+  - type: web
+    name: task-management-system
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    buildCommand: ''
+    startCommand: ''
+    envVars:
+      - key: DB_HOST
+        value: <your-mysql-host>
+      - key: DB_USERNAME
+        value: <your-mysql-username>
+      - key: DB_PASSWORD
+        value: <your-mysql-password>
+      - key: DB_NAME
+        value: task_management
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: 'false'
+      - key: SESSION_SECRET
+        value: <your-session-secret>
+      - key: JWT_SECRET
+        value: <your-jwt-secret>
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: '587'
+      - key: SMTP_USERNAME
+        value: <your-email>
+      - key: SMTP_PASSWORD
+        value: <your-app-password>
+      - key: SMTP_ENCRYPTION
+        value: tls
+      - key: FROM_EMAIL
+        value: <your-email>
+      - key: FROM_NAME
+        value: Task Management System
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_EMAIL
+        value: admin@example.com
+      - key: ADMIN_PASSWORD
+        value: <your-admin-password>
+      - key: ADMIN_PASSWORD_HASH
+        value: <your-admin-password-hash> 
